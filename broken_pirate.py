@@ -1,5 +1,5 @@
-greeting = input("Hello, possible pirate! What's the password?)
-if greeting in ["Arrr!"):
+greeting = input("Hello, possible pirate! What's the password?") # I added " changed by user.name-mohammadhassanazam (mohammadhassanazam@gmail.com)
+if greeting in ("Arrr!"): # changed [ to ( user.name-mohammadhassanazam (mohammadhassanazam@gmail.com)
 	print("Go away, pirate.")
-elif
-print("Greetings, hater of pirates!")
+else: #added : change elif to else and added : after else user.name-mohammadhassanazam (mohammadhassanazam@gmail.com)
+     print("Greetings, hater of pirates!") #added space to correct the syntax as there was no space user.name- mohammadhassanazam (mohammadhassanazam@gmail.com)

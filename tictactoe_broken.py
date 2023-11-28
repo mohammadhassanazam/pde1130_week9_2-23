@@ -20,7 +20,8 @@ def check_row_winner(row):
     """
     if row[0] == row[1] and row[1] == row[2]:
         return row[0]
-    return 0
+    else: #added else username-mohammadhassanazam (mohammadhassanazam@gmail.com)
+        return 0
 
 def get_col(game, col_number):
     return [game[x][col_number] for x in range(3)]
@@ -67,7 +68,7 @@ def add_piece(game, player, row, column):
     row: 0-index row
     column: 0-index column
     """
-    game[row][column+1] = player
+    game[row][column] = player #removed +1 from column+1 username-mohammadhassanazam
     return game
 
 def check_space_empty(game, row, column):
@@ -77,7 +78,7 @@ def convert_input_to_coordinate(user_input):
     return user_input - 1
 
 def switch_player(player):
-    if player = 1:
+    if player == 1: #changed = to == username-mohammadhassanazam (mohammadhassanazam@gmail.com)
         return 2
     else:
         return 1
@@ -98,12 +99,12 @@ if __name__ == '__main__':
     while winner == 0 and moves_exist(game):
         print("Currently player: " + str(player))
         available = False
-        while not available
+        while not available: # added : to the end of available username-mohammadhassanazam (mohammadhassanazam@gmail.com)
             row = convert_input_to_coordinate(int(input("Which row? (start with 1) ")))
             column = convert_input_to_coordinate(int(input("Which column? (start with 1) ")))
-            available = check_space_empty(game, row)
+            available = check_space_empty(game, row , column) #added column to game and row username.mohammadhassanazam (mohammadhassanazam@gmail.com)
         game = add_piece(game, player, row, column)
         display_game(game)
         player = switch_player(player)
-#        winner = check_winner(game)
+        winner = check_winner(game) # it was a comment with # in front removed # username-mohammadhassanazam (mohammadhassanazam@gmail.com)
     display_winner(winner)

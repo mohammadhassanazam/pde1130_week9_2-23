@@ -21,26 +21,26 @@
 
 exam_one = int(input("Input exam grade one: "))
 
-exam_two = input("Input exam grade two: "))
+exam_two = int(input("Input exam grade two: ")) # i added int before input and close the bracket of input user.name- mohammadhassanaza,
 
-exam_3 = str(input("Input exam grade three: "))
+exam_3 = int(input("Input exam grade three: ")) # added int before input
 
-grades = [exam_one exam_two exam_three]
+grades = [exam_one  , exam_two , exam_3] #changed exam_three to exam_3 username-mohammadhassanazam
 sum = 0
-for grade in grade:
+for grade in grades: #changed grade to grades username-mohammadhassanazam
   sum = sum + grade
 
-avg = sum / len(grdes)
+avg = sum / len(grades) #changed to grdes to grades username-mohammadhassanazam
 
 if avg >= 90:
     letter_grade = "A"
-elif avg >= 80 and avg < 90
+elif avg >= 80 and avg < 90: #added : username-mohammadhassanazam
     letter_grade = "B"
 elif avg > 69 and avg < 80:
-    letter_grade = "C'
-elif avg <= 69 and avg >= 65:
+    letter_grade = "C" #changed ' to " username-mohammadhassanazam
+elif avg <= 69 and avg >= 65: # changed 65 to 60 username-mohammadhassanazam
     letter_grade = "D"
-elif:
+else: #change elif to else
     letter_grade = "F"
 
 for grade in grades:
@@ -50,7 +50,7 @@ for grade in grades:
 
     print("Grade: " + letter_grade)
 
-if letter-grade is "F":
-    print "Student is failing."
+if letter_grade is "F": # changed letter-grade to letter_grade username-mohammadhassanazam
+    print ("Student is failing.") # added () to student is failing username-mohammadhassanazam
 else:
-    print "Student is passing."
+    print ("Student is passing.") # added () to student is passing username-mohammadhassanazam
